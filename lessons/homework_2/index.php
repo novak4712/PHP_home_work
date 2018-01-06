@@ -208,7 +208,7 @@ function oddBust($num1, $num2)
 {
     if (gettype($num1) == "integer" && gettype($num2) == "integer") {
         for ($i = $num1; $i < $num2; $i++) {
-            if ($i % 2) {
+            if ($i % 2 != 0) {
                 echo $i . ", ";
             }
         }
