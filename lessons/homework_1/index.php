@@ -26,7 +26,7 @@
     $array = ["red", "blue", "green", "purple", "orange", "pink", "grey"];
     shuffle($array);
     $newArray = array_slice($array, 0, 4);
-    foreach ($newArray as &$value) {
+    foreach ($newArray as $value) {
         echo "<div style='background: $value'></div>";
     };
     ?>
