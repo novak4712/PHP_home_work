@@ -26,8 +26,9 @@ if (isset($_POST["submit"])) {
         $arrLogin [] = $log;
     }
     $lenLog = "Login: " . $login;
+
     foreach ($arrLogin as $key) {
-            $pos = strripos($key, $lenLog);  // проверил логины на совпадение
+        $pos = strripos($key, $lenLog);  // проверил логины на совпадение
         if ($pos) {
             $error [] = "такой логин уже существует";
         }
