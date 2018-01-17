@@ -1,6 +1,1 @@
-Email: sfdsf@efg.ru || Login: 123 || Password: asdasd
-Email: sfdsf@efg.ru || Login: 12345 || Password: zxasd
-Email: sfdsf@efg.ru || Login: 1234 || Password: asdasd
-Email: sfdsf@efg.ru || Login: фывап || Password: ывфыв
-Email: sfdsf@efg.ru || Login: фыв || Password: фывфыв
-Email: sfdsf@efg.ru || Login: фыв || Password: фывфыв
+
