@@ -20,19 +20,15 @@ if (isset($_POST["submit"])) {
         $error [] = "введите ваш логин";
     }
     $arr = file("users.txt");    // создал массив из файла
+
     $arrLogin = [];  // пустой массив для логинов
+
     foreach ($arr as $value) {
         list($mail, $log, $pass) = explode("||", $value); // отобрал из массива файла все логины
-        $arrLogin [] = $log;
+        $arrLogin [] = substr($log, 8);
     }
-    $lenLog = "Login: " . $login;
 
-    foreach ($arrLogin as $key) {
-        $pos = strripos($key, $lenLog);  // проверил логины на совпадение
-        if ($pos) {
-            $error [] = "такой логин уже существует";
-        }
-    }
+//            $error [] = "такой логин уже существует";
 
     if (empty($_POST["password"])) { //  проверил наличие пороля
         $error [] = "введите ваш пароль";
